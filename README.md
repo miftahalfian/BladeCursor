@@ -1,4 +1,4 @@
-# SlashCursor
+# BladeCursor
 
 ![Slashing cursor effect](img/slash.gif)
 
