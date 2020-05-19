@@ -34,23 +34,24 @@ private:
     Color3B firstColor;
     Color3B secondColor;
     
-    std::vector<Vec2> path;
+    std::map<int, std::vector<Vec2>> paths;
     
     DrawNode* draw;
     
     float time = 0;
     
     void drawSlash();
-    void addPoint(Vec2 point);
+    void addPoint(Vec2 point, int id);
+    void release(int id);
 public:
     static cocos2d::Scene* createScene();
     virtual bool init();
     virtual void onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event);
     void update(float dt);
     
-    bool onTouchBegan(Touch* touch, Event* event);
-    void onTouchMoved(Touch* touch, Event* event);
-    void onTouchEnded(Touch* touch, Event* event);
+    void onTouchesBegan(const std::vector<Touch*>& touches, Event* event);
+    void onTouchesMoved(const std::vector<Touch*>& touches, Event* event);
+    void onTouchesEnded(const std::vector<Touch*>& touches, Event* event);
     
     CREATE_FUNC(HelloWorld);
 };
