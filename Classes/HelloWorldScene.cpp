@@ -41,13 +41,10 @@ bool HelloWorld::init()
     {
         return false;
     }
-
-    auto visibleSize = Director::getInstance()->getVisibleSize();
     
     draw = DrawNode::create();
     this->addChild(draw);
     
-    isDualColor = true;
     firstColor = Color3B::RED;
     secondColor = Color3B::YELLOW;
     

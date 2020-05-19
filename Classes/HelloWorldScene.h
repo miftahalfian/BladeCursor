@@ -31,7 +31,6 @@ using namespace cocos2d;
 class HelloWorld : public cocos2d::Scene
 {
 private:
-    bool isDualColor = false;
     Color3B firstColor;
     Color3B secondColor;
     
