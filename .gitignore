@@ -1,0 +1,90 @@
+# OSX - https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+.DS_Store
+.AppleDouble
+.LSOverride
+
+bin
+package
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# Windows - https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+*.exe
+
+# CMake
+*CMakeCache.txt
+*CMakeFiles/
+*cmake_install.cmake
+*Makefile
+lib/
+
+# Windows shortcuts
+*.lnk
+
+
+# cocos studio
+*.udf
+
+# proj.android
+bin/
+*.iml
+proj.android/.gradle/*
+proj.android/.idea/*
+proj.android/build/
+proj.android/gen/
+proj.android/app/assets/
+proj.android/app/obj/
+proj.android/app/libs/armeabi/
+proj.android-studio/app/gradle.properties
+#proj.android-studio/app/local.properties
+proj.android-studio/*/build/
+
+# proj.ios_mac
+proj.ios_mac/bin
+proj.ios_mac/build/
+proj.ios_mac/*.xcodeproj/project.xcworkspace
+proj.ios_mac/*.xcodeproj/xcuserdata/
+proj.ios_mac/cocos2dx-store-example.xcodeproj/project.xcworkspace/xcshareddata/cocos2dx-store-example.xccheckout
+!*.pch
+
+# proj.linux
+
+# proj.win32
+proj.win32/.vs/
+proj.win32/*.sdf
+proj.win32/*.opensdf
+proj.win32/Debug.*/
+proj.win32/Release.*/
+proj.win32/bin
